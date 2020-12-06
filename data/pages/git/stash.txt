@@ -1,0 +1,103 @@
+====== Git Stash ======
+
+El comando Git Stash se usa para guardar cambios no comiteados. Es decir, si estamos trabajando en local y se han realizado cambios en los archivos (a los cuales no se les ha hecho un Commit), el comando git stash nos guardara dichos cambios en una rama paralela.
+
+Como paso anterior, opcional, podemos ejecutar el comando 
+<code>git status On branch</code>
+
+Dicho comando nos comprobara los cambios de nuestro código local, frente a el máster de GitHub. Las posibles respuestas de este comando son:
+
+**Si tiene esta salida, significa que a el directorio f0nt_4ngubDk esta completamente actualizado con GitHub**
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/WebstormProjects/f0nt_4ngubDk$ git status On branch
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+</code>
+
+**Si tiene esta salida, significa que a el directorio Front tiene un commit que no esta reflejado en GitHub**
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Front$ git status On branch
+En la rama master
+Tu rama está adelantada a 'origin/master' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+
+</code>
+
+
+
+**Si tiene esta salida, significa que a el directorio BackTesteo le falta el documento wallet.component.scss y se ha modificado/creado el documento package-lock.json **
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/BackTesteo$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:     package-lock.json
+        borrado:        www/pfp-ng4-front/src/app/components/user/wallet/wallet.component.scss
+  
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+
+</code>
+
+====== Como guardar los datos locales con Stash ======
+
+De forma predeterminada, al ejecutar el comando git stash, se guardará en un stash lo siguiente:
+
+     * los cambios que se hayan añadido a tu índice (cambios preparados)
+  *     los cambios efectuados en archivos de los que Git está haciendo un seguimiento (cambios sin preparar)
+
+<code> usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ nano src/Caja.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/AutoStoreBrain$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.
+</code> 
+
+Pero **no** lo siguiente:
+
+  *     los archivos nuevos del código en el que estás trabajando que todavía no se hayan preparado
+  *     los archivos que se hayan ignorado
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ touch foo.java
+No hay cambios locales para guardar
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	src/foo.java
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status On branch
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+ </code>
+
+En el caso de que queramos que se guarde en la pila de stash ese nuevo archivo, se haría de la siguiente manera:
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git add src/foo.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.
+</code>
+
+====== Como manejar varios stashs ======
+
+Cada vez que se hace un stash este se guarda sin eliminar el resto. Para ver todos los stashs que se tengan, hay que ejecutar el comando:
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash list
+</code>
+
+
+====== Como recuperar los stashs ======
+Si se quiere recuperar el último stash, se debe ejecutar el comando:
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash pop</code>
+
+En cambio, si se desea recuperar un stash antiguo (de los que nos mostro "git stash list") se debe ejecutar el comando:
+<code>git stash pop stash@{2}</code>

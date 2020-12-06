@@ -1,0 +1,23 @@
+====== Uso de ramas (Branches) ======
+Esta entrada esta destinada para ayudar a usar las distintas ramas que se han creado (archivosPre, archivosLocal, ...)
+
+Para actualizar las ramas
+
+<code>git fetch</code>
+
+Para crear una nueva rama
+<code>git branch nuevafuncionalidad</code>
+
+Para cambiar a esa rama 
+<code>git checkout nuevafuncionalidad</code>
+
+
+Para saber en que rama me encuentro
+<code> git branch </code>
+
+
+Si queremos comparar una rama con otra
+<code>git diff --stat master archivosPre</code>
+
+
+Para mas información pinchar [[https://www.genbeta.com/desarrollo/manejo-de-ramas-de-desarrollo-con-git| aquí]]

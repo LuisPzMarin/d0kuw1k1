@@ -1,0 +1,7 @@
+base     argon-alternative
+author   jhak
+email    jesshakola@gmail.com
+date     2020-04-28
+name     Argon Template Alternative
+desc     Argon template with enhanced toolbars and menus
+url      https://www.dokuwiki.org/template:argon-alternative

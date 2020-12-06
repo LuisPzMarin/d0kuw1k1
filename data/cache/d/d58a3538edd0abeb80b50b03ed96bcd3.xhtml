@@ -1,0 +1,134 @@
+
+<h1 class="sectionedit1" id="git_stash">Git Stash</h1>
+<div class="level1">
+
+<p>
+El comando Git Stash se usa para guardar cambios no comiteados. Es decir, si estamos trabajando en local y se han realizado cambios en los archivos (a los cuales no se les ha hecho un Commit), el comando git stash nos guardara dichos cambios en una rama paralela.
+</p>
+
+<p>
+Como paso anterior, opcional, podemos ejecutar el comando 
+</p>
+<pre class="code">git status On branch</pre>
+
+<p>
+Dicho comando nos comprobara los cambios de nuestro código local, frente a el máster de GitHub. Las posibles respuestas de este comando son:
+</p>
+
+<p>
+<strong>Si tiene esta salida, significa que a el directorio f0nt_4ngubDk esta completamente actualizado con GitHub</strong>
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/WebstormProjects/f0nt_4ngubDk$ git status On branch
+En la rama master
+Tu rama está actualizada con &#039;origin/master&#039;.
+
+nada para hacer commit, el árbol de trabajo está limpio</pre>
+
+<p>
+<strong>Si tiene esta salida, significa que a el directorio Front tiene un commit que no esta reflejado en GitHub</strong>
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Front$ git status On branch
+En la rama master
+Tu rama está adelantada a &#039;origin/master&#039; por 1 commit.
+  (usa &quot;git push&quot; para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+</pre>
+
+<p>
+<strong>Si tiene esta salida, significa que a el directorio BackTesteo le falta el documento wallet.component.scss y se ha modificado/creado el documento package-lock.json </strong>
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/BackTesteo$ git status
+En la rama master
+Tu rama está actualizada con &#039;origin/master&#039;.
+
+Cambios no rastreados para el commit:
+  (usa &quot;git add/rm &lt;archivo&gt;...&quot; para actualizar a lo que se le va a hacer commit)
+  (usa &quot;git checkout -- &lt;archivo&gt;...&quot; para descartar los cambios en el directorio de trabajo)
+
+	modificado:     package-lock.json
+        borrado:        www/pfp-ng4-front/src/app/components/user/wallet/wallet.component.scss
+  
+sin cambios agregados al commit (usa &quot;git add&quot; y/o &quot;git commit -a&quot;)
+</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Git Stash&quot;,&quot;hid&quot;:&quot;git_stash&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-2004&quot;} -->
+<h1 class="sectionedit2" id="como_guardar_los_datos_locales_con_stash">Como guardar los datos locales con Stash</h1>
+<div class="level1">
+
+<p>
+De forma predeterminada, al ejecutar el comando git stash, se guardará en un stash lo siguiente:
+</p>
+<ul>
+<li class="level1"><div class="li"> los cambios que se hayan añadido a tu índice (cambios preparados)</div>
+</li>
+<li class="level2"><div class="li">     los cambios efectuados en archivos de los que Git está haciendo un seguimiento (cambios sin preparar)</div>
+</li>
+</ul>
+<pre class="code"> usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ nano src/Caja.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/AutoStoreBrain$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.</pre>
+
+<p>
+Pero <strong>no</strong> lo siguiente:
+</p>
+<ul>
+<li class="level1"><div class="li">     los archivos nuevos del código en el que estás trabajando que todavía no se hayan preparado</div>
+</li>
+<li class="level1"><div class="li">     los archivos que se hayan ignorado</div>
+</li>
+</ul>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ touch foo.java
+No hay cambios locales para guardar
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status
+En la rama master
+Tu rama está actualizada con &#039;origin/master&#039;.
+
+Archivos sin seguimiento:
+  (usa &quot;git add &lt;archivo&gt;...&quot; para incluirlo a lo que se será confirmado)
+
+	src/foo.java
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa &quot;git add&quot; para hacerles seguimiento)
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status On branch
+En la rama master
+Tu rama está actualizada con &#039;origin/master&#039;.
+
+nada para hacer commit, el árbol de trabajo está limpio
+ </pre>
+
+<p>
+En el caso de que queramos que se guarde en la pila de stash ese nuevo archivo, se haría de la siguiente manera:
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git add src/foo.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Como guardar los datos locales con Stash&quot;,&quot;hid&quot;:&quot;como_guardar_los_datos_locales_con_stash&quot;,&quot;codeblockOffset&quot;:4,&quot;secid&quot;:2,&quot;range&quot;:&quot;2005-3812&quot;} -->
+<h1 class="sectionedit3" id="como_manejar_varios_stashs">Como manejar varios stashs</h1>
+<div class="level1">
+
+<p>
+Cada vez que se hace un stash este se guarda sin eliminar el resto. Para ver todos los stashs que se tengan, hay que ejecutar el comando:
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash list</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Como manejar varios stashs&quot;,&quot;hid&quot;:&quot;como_manejar_varios_stashs&quot;,&quot;codeblockOffset&quot;:7,&quot;secid&quot;:3,&quot;range&quot;:&quot;3813-4076&quot;} -->
+<h1 class="sectionedit4" id="como_recuperar_los_stashs">Como recuperar los stashs</h1>
+<div class="level1">
+
+<p>
+Si se quiere recuperar el último stash, se debe ejecutar el comando:
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash pop</pre>
+
+<p>
+En cambio, si se desea recuperar un stash antiguo (de los que nos mostro “git stash list”) se debe ejecutar el comando:
+</p>
+<pre class="code">git stash pop stash@{2}</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Como recuperar los stashs&quot;,&quot;hid&quot;:&quot;como_recuperar_los_stashs&quot;,&quot;codeblockOffset&quot;:8,&quot;secid&quot;:4,&quot;range&quot;:&quot;4077-&quot;} -->

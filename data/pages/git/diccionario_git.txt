@@ -1,0 +1,50 @@
+====== Listado: ======
+
+  * git stash
+  * git pull
+  * git stash pop
+  * git stash list
+  * git branch mybranch
+  * git checkout mybranch
+  * git checkout -b mybranch
+  * git merge rama
+  * git checkout -- <file> (Git revert changes)
+  * git reset
+  * git fetch --all
+  * git checkout mybranch
+  * git checkout -b rama --track origin/test
+  * git stash dió error (de unable to write index, poco espacio) , con un df -h (muestra el disco y uso), y du -h [ruta] | sort -rn (te ordena de mayor a menor uso de disco), la ruta /var/log/journal (creo que es de errores de sistema), era gigante, la borramos y pudimos seguir adelante con el git stash
+
+====== Seleccionando commits: Cherry-pick ======
+
+  * (master) $ git cherry-pick 13f03ab (Un solo commit)
+  * (master) $ git cherry-pick 13f03ab fe834e9  (Varios commits)
+  * (master) $ git cherry-pick -x 13f03ab (Modifica el mensaje para añadir una referencia al commit original)
+  * (master) $ git log --pretty="%h %s %b" 8eac365 Add Facebook login (cherry picked from commit 13f03ab) 
+  * git cherry-pick -n (No hace ommit)
+  * git cherry-pick -e (Edita el mensaje en lugar de usar el original)
+Referencia: https://www.runroom.com/realworld/seleccionando-commits-cherry-pick
+
+====== Almacenar el usuario y la contraseña ======
+  * $ git config credential.helper store
+  * $ git push https://github.com/owner/repo.git
+
+  * Username for 'https://github.com': <USERNAME>
+  * Password for 'https://USERNAME@github.com': <PASSWORD>
+Fuente: [[https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password]]
+
+----
+
+  * <code> $ git config --global --unset credential.helper (Resetear) </code>
+  * <code> $ git config --unset credential.helper (Resetear) </code>
+
+Fuente: [[https://stackoverflow.com/questions/15381198/remove-credentials-from-git]]
+
+====== OBTENIENDO LA URL DE NUESTRO REPOSITORIO ======
+<code>git config --get remote.origin.url</code>
+
+
+
+====== Clonar un repositorio de GitHub ======
+<code>git clone https://github.com/usuario/nombre_repositorio
+</code>

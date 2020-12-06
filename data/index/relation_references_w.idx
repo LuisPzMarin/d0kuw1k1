@@ -1,3 +1,9 @@
 wiki:syntax
 start
 sidebar
+start_do_index
+playground:playground
+wiki:pagename
+some:namespaces
+wiki:nonexisting
+wiki:dokuwiki

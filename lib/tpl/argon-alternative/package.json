@@ -1,0 +1,27 @@
+{
+  "name": "argon-dokuwiki-template-alternative",
+  "version": "1.0.0",
+  "description": "Argon - a clean, responsive, modern template for Dokuwiki. https://www.dokuwiki.org/template:argon",
+  "main": "script.js",
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.26.5"
+  },
+  "scripts": {
+    "styles": "sass --watch assets/css/doku.scss assets/css/doku.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jessfernando/Argon-Dokuwiki-Template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jessfernando/Argon-Dokuwiki-Template/issues"
+  },
+  "homepage": "https://github.com/jessfernando/Argon-Dokuwiki-Template#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@jessfernando"
+  }
+}

@@ -1,0 +1,23 @@
+====== Diccionario Angular ======
+
+==== Ejecutar el servidor de Angular ====
+<code> ng serve </code>
+
+
+==== Parar el servidor ====
+Ejecutar este comando para saber el número del proceso que ejecutó el ng serve
+<code> netstat -tulp | grep 4200 </code>
+Matar dicho proceso
+<code> kill **** </code>
+
+==== Crear componente en angular ====
+Ejecutar comando en la misma carpeta en la que este el archivo "app.module.ts"
+<code>
+ ng g c <nombre> <opciones> 
+</code>
+
+
+
+====== Errores ======
+====== Invalid Host header ======
+<code>ng serve --host 0.0.0.0 --disable-host-check</code>

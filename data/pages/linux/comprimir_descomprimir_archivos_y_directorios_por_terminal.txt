@@ -1,0 +1,31 @@
+====== Comprimir/Descomprimir archivos y directorios por terminal ======
+
+====== ZIP ======
+
+===== Comprimir varios archivos en un sólo archivo Zip =====
+<code> zip nombreArchivoDestino.zip archivo1 archivo2 archivo3 ....</code>
+
+
+===== Comprimir todos los archivos de un directorio =====
+<code> zip -r directorioDestino.zip /home/directorioComprimir </code>
+
+===== Descomprimir con Zip =====
+<code> unzip archivoComprimido.zip </code>
+
+
+====== TAR.GZ ======
+
+===== Comprimir un directorio con tar.gz =====
+<code> tar -czvf nombreDirectorio.tar.gz nombreDirectorio</code>
+
+
+===== Descomprimir un directorio comprimido con tar.gz =====
+<code> tar -xvzf nombreDirectorio.tar.gz </code>
+
+
+
+
+== FUENTE ==
+Para más info, visita la fuente:
+
+https://tutobasico.com/comprimir-directorio-ubuntu/

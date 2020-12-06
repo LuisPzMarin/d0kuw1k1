@@ -1,0 +1,16 @@
+====== Conexión a AWS ======
+
+====== Conexión y descarga de archivos ======
+
+
+Para estos ejemplos se va a usar la ip que tiene ahora la maquina que aloja la wiki: http://52.14.58.211/
+
+Para una primera conexión por ssh:
+<code> sudo ssh -i .ssh/aws-key ubuntu@52.14.58.211</code>
+
+Si quisieramos transferir archivos desde nuestra maquina al server sería (en caso de ser una carpeta, poner "-r"):
+
+<code>sudo scp -i .ssh/aws-key Descargas/archivo ubuntu@52.14.58.211:/home/ubuntu/Descargas</code>
+
+En caso de que el flujo fuera al reves:
+<code>scp -i .ssh/aws-key usuario@servidor:ruta_servidor_donde_esta_el_archivo ruta_ordenador_local_donde_poner_el_archivo</code>

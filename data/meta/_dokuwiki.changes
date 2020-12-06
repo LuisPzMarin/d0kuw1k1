@@ -1,0 +1,24 @@
+1607282926	176.84.220.31	C	start	luispzmarin	creado		22
+1607287368	176.84.220.31	E	start	luispzmarin			15
+1607287521	176.84.220.31	E	start	luispzmarin			-3
+1607287546	176.84.220.31	C	pagina_test	luispzmarin	creado		19
+1607287654	176.84.220.31	E	start	luispzmarin			26
+1607287673	176.84.220.31	E	start	luispzmarin			32
+1607287740	176.84.220.31	E	start	luispzmarin			79
+1607287750	176.84.220.31	E	start	luispzmarin			1
+1607287861	176.84.220.31	C	comprimir_zip_y_tar_gz	luispzmarin	creado		789
+1607289383	176.84.220.31	D	playground:playground	luispzmarin	Eliminada		
+1607289413	176.84.220.31	D	wiki:dokuwiki	luispzmarin	Eliminada		
+1607289439	176.84.220.31	D	wiki:syntax	luispzmarin	Eliminada		
+1607289466	176.84.220.31	D	wiki:welcome	luispzmarin	Eliminada		
+1607289787	176.84.220.31	C	angular:diccionario_angular	luispzmarin	creado		564
+1607289807	176.84.220.31	E	angular:diccionario_angular	luispzmarin			13
+1607289912	176.84.220.31	C	git:diccionario_git	luispzmarin	creado		2036
+1607289948	176.84.220.31	C	git:eliminar_commit	luispzmarin	creado		2034
+1607289994	176.84.220.31	C	git:stash	luispzmarin	creado		4423
+1607290055	176.84.220.31	C	git:uso_de_ramas	luispzmarin	creado		617
+1607290129	176.84.220.31	C	linux:comprimir_descomprimir_archivos_y_directorios_por_terminal	luispzmarin	comprimir_zip_y_tar_gz renombrar a linux:comprimir_descomprimir_archivos_y_directorios_por_terminal		789
+1607290129	176.84.220.31	D	comprimir_zip_y_tar_gz	luispzmarin	(Borrar) comprimir_zip_y_tar_gz renombrar a linux:comprimir_descomprimir_archivos_y_directorios_por_terminal		
+1607290172	176.84.220.31	D	pagina_test	luispzmarin	Eliminada		
+1607290687	176.84.220.31	C	aws:conexion	luispzmarin	creado		789
+1607290790	176.84.220.31	E	aws:conexion	luispzmarin			-119

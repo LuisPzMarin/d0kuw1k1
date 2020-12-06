@@ -1,0 +1,16 @@
+a:2:{s:7:"current";a:8:{s:4:"date";a:2:{s:7:"created";i:1607289948;s:8:"modified";i:1607289948;}s:7:"creator";s:18:"Luis Pérez Marín";s:4:"user";s:11:"luispzmarin";s:11:"last_change";a:8:{s:4:"date";i:1607289948;s:2:"ip";s:13:"176.84.220.31";s:4:"type";s:1:"C";s:2:"id";s:19:"git:eliminar_commit";s:4:"user";s:11:"luispzmarin";s:3:"sum";s:6:"creado";s:5:"extra";s:0:"";s:10:"sizechange";i:2034;}s:5:"title";s:28:"Eliminar y Recuperar Commits";s:11:"description";a:2:{s:15:"tableofcontents";a:3:{i:0;a:4:{s:3:"hid";s:28:"eliminar_y_recuperar_commits";s:5:"title";s:28:"Eliminar y Recuperar Commits";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:8:"eliminar";s:5:"title";s:8:"ELIMINAR";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:9:"recuperar";s:5:"title";s:9:"RECUPERAR";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:503:"Eliminar y Recuperar Commits
+
+ELIMINAR
+
+De esta manera se eliminan los Commits permanentemente, tenga mucho cuidado porque seguramente (con suerte no) no los pueda recuperar.
+
+Buscamos el Commit al que queremos volver
+
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git log
+commit 14e7f121731f95dc640998e39b600ebaa6495694 (HEAD -> configPre, origin/configPre)
+Author: luispzmarin <luispzmarin@gmail.com>
+Date:   Wed Nov 25 13:13:49 2020 +0000
+
+    Test commit
+
+commit d00e3b0c69eb3cc48e193…";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}s:8:"relation";a:1:{s:10:"firstimage";s:0:"";}}s:10:"persistent";a:4:{s:4:"date";a:1:{s:7:"created";i:1607289948;}s:7:"creator";s:18:"Luis Pérez Marín";s:4:"user";s:11:"luispzmarin";s:11:"last_change";a:8:{s:4:"date";i:1607289948;s:2:"ip";s:13:"176.84.220.31";s:4:"type";s:1:"C";s:2:"id";s:19:"git:eliminar_commit";s:4:"user";s:11:"luispzmarin";s:3:"sum";s:6:"creado";s:5:"extra";s:0:"";s:10:"sizechange";i:2034;}}}

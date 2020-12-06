@@ -1,0 +1,52 @@
+====== Eliminar y Recuperar Commits ======
+===== ELIMINAR =====
+
+De esta manera se eliminan los Commits permanentemente, tenga mucho cuidado porque seguramente (con suerte no) no los pueda recuperar.
+
+Buscamos el Commit al que queremos volver
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git log
+commit 14e7f121731f95dc640998e39b600ebaa6495694 (HEAD -> configPre, origin/configPre)
+Author: luispzmarin <luispzmarin@gmail.com>
+Date:   Wed Nov 25 13:13:49 2020 +0000
+
+    Test commit
+
+commit d00e3b0c69eb3cc48e193d3ebd5e1f66b440ffac
+Author: luispzmarin <luispzmarin@gmail.com>
+Date:   Wed Nov 25 12:52:23 2020 +0000
+
+    Create Pre enviroment
+</code>
+
+Después copiamos el hash del commit al que queremos volver (con los 7 prímeros dígitos estaría bien) y ejecutamos la siguiente orden
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git reset --hard d00e3b0c69eb3cc48e193d3ebd5e1f66b440ffac
+HEAD está ahora en d00e3b0 Create Pre enviroment
+</code>
+
+Ahora tenemos los cambios en local, para corregir GitHub, deberemos hacer un push. Pero al tener GitHub un commit por delante nuestro no nos dejará. Por ello habra que "forzarlo"
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git push --force
+Username for 'https://github.com': luispzmarin 
+Password for 'https://luispzmarin@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/pl4t4f0rm4bdk/f0nt_4ngubDk
+ + 14e7f12...d00e3b0 configPre -> configPre (forced update)
+</code>
+
+
+===== RECUPERAR =====
+
+<code>usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git fsck --lost-found
+Revisando objetos directorios: 100% (256/256), listo.
+Revisando objetos: 100% (1573/1573), listo.
+dangling commit 14e7f121731f95dc640998e39b600ebaa6495694
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git show 14e7f121731f95dc640998e39b600ebaa6495694
+commit 14e7f121731f95dc640998e39b600ebaa6495694
+Author: luispzmarin <luispzmarin@gmail.com>
+Date:   Wed Nov 25 13:13:49 2020 +0000
+
+    Test commit
+
+ </code>

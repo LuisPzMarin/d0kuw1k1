@@ -1,0 +1,46 @@
+a.wikilink1, a.wikilink2, a.breadcrumbs {
+    position: relative;
+    opacity: 1;
+}
+.dokuwiki a.wikilink1:hover, .dokuwiki a.wikilink2:hover, .dokuwiki a.breadcrumbs:hover {
+    text-decoration: none;
+    background: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 2'%3E%3Cpath fill='none' stroke='%23080' stroke-width='1' class='st0' d='M0,3.5 c 5,0, 5, -3, 10, -3 s 5,3, 10, 3 c 5,0, 5, -3, 10, -3 s 5,3, 10, 3' /%3E%3Cstyle type='text/css'%3E.st0 { animation: shift 0.3s linear infinite; } @keyframes shift { from { transform: translateX(0); } to { transform: translateX(-20px); } }%3C/style%3E%3C/svg%3E") 0 bottom repeat-x;
+    background-size: 0.8em 0.2em;
+}
+a.wikilink1:after, a.wikilink2:after, a.breadcrumbs:after {
+    box-sizing: border-box;
+    width: 1.2em;
+    height: 1.2em;
+    padding: 0.1em;
+    border-radius: 0.6em;
+    border: thin solid #990;
+    content: "";
+    color: #990;
+    margin: 0;
+    box-shadow: 0 0 1px #EAEAC0;
+    background: #FAFAE0 url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z'%3E%3C/path%3E%3C/svg%3E") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease-out 0.2s;
+    -moz-transition: all 0.3s ease-out 0.2s;
+    -o-transition: all 0.3s ease-out 0.2s;
+    transition: all 0.3s ease-out 0.2s;
+}
+a.wikilink1:hover:after, a.wikilink2:hover:after, a.breadcrumbs:hover:after {
+    opacity: 0.9;
+    margin: -0.6em -0.6em 0 0;
+}
+span#plugin__editonlink {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    border: thin solid #666;
+    color: #333;
+    z-index: 101;
+    opacity: 0;
+}

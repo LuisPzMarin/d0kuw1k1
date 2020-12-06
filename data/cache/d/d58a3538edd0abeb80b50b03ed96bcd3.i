@@ -1,0 +1,50 @@
+a:98:{i:0;a:3:{i:0;s:14:"document_start";i:1;a:0:{}i:2;i:0;}i:1;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:9:"Git Stash";i:1;i:1;i:2;i:1;}i:2;i:1;}i:2;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:1;}i:2;i:1;}i:3;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:1;}i:4;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:263:"El comando Git Stash se usa para guardar cambios no comiteados. Es decir, si estamos trabajando en local y se han realizado cambios en los archivos (a los cuales no se les ha hecho un Commit), el comando git stash nos guardara dichos cambios en una rama paralela.";}i:2;i:26;}i:5;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:289;}i:6;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:289;}i:7;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:58:"Como paso anterior, opcional, podemos ejecutar el comando ";}i:2;i:291;}i:8;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:355;}i:9;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:20:"git status On branch";i:1;N;i:2;N;}i:2;i:355;}i:10;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:355;}i:11;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:142:"Dicho comando nos comprobara los cambios de nuestro código local, frente a el máster de GitHub. Las posibles respuestas de este comando son:";}i:2;i:385;}i:12;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:527;}i:13;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:527;}i:14;a:3:{i:0;s:11:"strong_open";i:1;a:0:{}i:2;i:529;}i:15;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:106:"Si tiene esta salida, significa que a el directorio f0nt_4ngubDk esta completamente actualizado con GitHub";}i:2;i:531;}i:16;a:3:{i:0;s:12:"strong_close";i:1;a:0:{}i:2;i:637;}i:17;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:639;}i:18;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:219:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/WebstormProjects/f0nt_4ngubDk$ git status On branch
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+";i:1;N;i:2;N;}i:2;i:646;}i:19;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:646;}i:20;a:3:{i:0;s:11:"strong_open";i:1;a:0:{}i:2;i:875;}i:21;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:105:"Si tiene esta salida, significa que a el directorio Front tiene un commit que no esta reflejado en GitHub";}i:2;i:877;}i:22;a:3:{i:0;s:12:"strong_close";i:1;a:0:{}i:2;i:982;}i:23;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:984;}i:24;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:263:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Front$ git status On branch
+En la rama master
+Tu rama está adelantada a 'origin/master' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+nada para hacer commit, el árbol de trabajo está limpio
+
+";i:1;N;i:2;N;}i:2;i:991;}i:25;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:991;}i:26;a:3:{i:0;s:11:"strong_open";i:1;a:0:{}i:2;i:1266;}i:27;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:164:"Si tiene esta salida, significa que a el directorio BackTesteo le falta el documento wallet.component.scss y se ha modificado/creado el documento package-lock.json ";}i:2;i:1268;}i:28;a:3:{i:0;s:12:"strong_close";i:1;a:0:{}i:2;i:1432;}i:29;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:1434;}i:30;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:554:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/BackTesteo$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+Cambios no rastreados para el commit:
+  (usa "git add/rm <archivo>..." para actualizar a lo que se le va a hacer commit)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:     package-lock.json
+        borrado:        www/pfp-ng4-front/src/app/components/user/wallet/wallet.component.scss
+  
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+
+";i:1;N;i:2;N;}i:2;i:1441;}i:31;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:2005;}i:32;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:40:"Como guardar los datos locales con Stash";i:1;i:1;i:2;i:2005;}i:2;i:2005;}i:33;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:1;}i:2;i:2005;}i:34;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2005;}i:35;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:97:"De forma predeterminada, al ejecutar el comando git stash, se guardará en un stash lo siguiente:";}i:2;i:2061;}i:36;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2159;}i:37;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:2159;}i:38;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:2159;}i:39;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:2159;}i:40;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:68:" los cambios que se hayan añadido a tu índice (cambios preparados)";}i:2;i:2166;}i:41;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:2234;}i:42;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:2234;}i:43;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:2;}i:2;i:2234;}i:44;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:2234;}i:45;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:107:"     los cambios efectuados en archivos de los que Git está haciendo un seguimiento (cambios sin preparar)";}i:2;i:2238;}i:46;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:2345;}i:47;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:2345;}i:48;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:2345;}i:49;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:237:" usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ nano src/Caja.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/AutoStoreBrain$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.
+";i:1;N;i:2;N;}i:2;i:2352;}i:50;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2352;}i:51;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:5:"Pero ";}i:2;i:2600;}i:52;a:3:{i:0;s:11:"strong_open";i:1;a:0:{}i:2;i:2605;}i:53;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:2:"no";}i:2;i:2607;}i:54;a:3:{i:0;s:12:"strong_close";i:1;a:0:{}i:2;i:2609;}i:55;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:14:" lo siguiente:";}i:2;i:2611;}i:56;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:2626;}i:57;a:3:{i:0;s:10:"listu_open";i:1;a:0:{}i:2;i:2626;}i:58;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:2626;}i:59;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:2626;}i:60;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:99:"     los archivos nuevos del código en el que estás trabajando que todavía no se hayan preparado";}i:2;i:2630;}i:61;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:2729;}i:62;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:2729;}i:63;a:3:{i:0;s:13:"listitem_open";i:1;a:1:{i:0;i:1;}i:2;i:2729;}i:64;a:3:{i:0;s:16:"listcontent_open";i:1;a:0:{}i:2;i:2729;}i:65;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:39:"     los archivos que se hayan ignorado";}i:2;i:2733;}i:66;a:3:{i:0;s:17:"listcontent_close";i:1;a:0:{}i:2;i:2772;}i:67;a:3:{i:0;s:14:"listitem_close";i:1;a:0:{}i:2;i:2772;}i:68;a:3:{i:0;s:11:"listu_close";i:1;a:0:{}i:2;i:2772;}i:69;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:667:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ touch foo.java
+No hay cambios locales para guardar
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	src/foo.java
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git status On branch
+En la rama master
+Tu rama está actualizada con 'origin/master'.
+
+nada para hacer commit, el árbol de trabajo está limpio
+ ";i:1;N;i:2;N;}i:2;i:2778;}i:70;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:2778;}i:71;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:113:"En el caso de que queramos que se guarde en la pila de stash ese nuevo archivo, se haría de la siguiente manera:";}i:2;i:3455;}i:72;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:3568;}i:73;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:228:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git add src/foo.java 
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash
+Directorio de trabajo guardado y estado de índice WIP on master: 093534e Último Commit.
+";i:1;N;i:2;N;}i:2;i:3575;}i:74;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:3813;}i:75;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:26:"Como manejar varios stashs";i:1;i:1;i:2;i:3813;}i:2;i:3813;}i:76;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:1;}i:2;i:3813;}i:77;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:3813;}i:78;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:137:"Cada vez que se hace un stash este se guarda sin eliminar el resto. Para ver todos los stashs que se tengan, hay que ejecutar el comando:";}i:2;i:3855;}i:79;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:3998;}i:80;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:68:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash list
+";i:1;N;i:2;N;}i:2;i:3998;}i:81;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:4077;}i:82;a:3:{i:0;s:6:"header";i:1;a:3:{i:0;s:25:"Como recuperar los stashs";i:1;i:1;i:2;i:4077;}i:2;i:4077;}i:83;a:3:{i:0;s:12:"section_open";i:1;a:1:{i:0;i:1;}i:2;i:4077;}i:84;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:4077;}i:85;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:69:"Si se quiere recuperar el último stash, se debe ejecutar el comando:";}i:2;i:4117;}i:86;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:4192;}i:87;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:66:"usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/Test$ git stash pop";i:1;N;i:2;N;}i:2;i:4192;}i:88;a:3:{i:0;s:6:"p_open";i:1;a:0:{}i:2;i:4192;}i:89;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:73:"En cambio, si se desea recuperar un stash antiguo (de los que nos mostro ";}i:2;i:4268;}i:90;a:3:{i:0;s:18:"doublequoteopening";i:1;a:0:{}i:2;i:4341;}i:91;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:14:"git stash list";}i:2;i:4342;}i:92;a:3:{i:0;s:18:"doublequoteclosing";i:1;a:0:{}i:2;i:4356;}i:93;a:3:{i:0;s:5:"cdata";i:1;a:1:{i:0;s:30:") se debe ejecutar el comando:";}i:2;i:4357;}i:94;a:3:{i:0;s:7:"p_close";i:1;a:0:{}i:2;i:4393;}i:95;a:3:{i:0;s:4:"code";i:1;a:3:{i:0;s:23:"git stash pop stash@{2}";i:1;N;i:2;N;}i:2;i:4393;}i:96;a:3:{i:0;s:13:"section_close";i:1;a:0:{}i:2;i:4424;}i:97;a:3:{i:0;s:12:"document_end";i:1;a:0:{}i:2;i:4424;}}

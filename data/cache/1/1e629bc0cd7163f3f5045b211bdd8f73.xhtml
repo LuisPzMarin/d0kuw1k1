@@ -1,0 +1,64 @@
+
+<h1 class="sectionedit1" id="eliminar_y_recuperar_commits">Eliminar y Recuperar Commits</h1>
+<div class="level1">
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Eliminar y Recuperar Commits&quot;,&quot;hid&quot;:&quot;eliminar_y_recuperar_commits&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-43&quot;} -->
+<h2 class="sectionedit2" id="eliminar">ELIMINAR</h2>
+<div class="level2">
+
+<p>
+De esta manera se eliminan los Commits permanentemente, tenga mucho cuidado porque seguramente (con suerte no) no los pueda recuperar.
+</p>
+
+<p>
+Buscamos el Commit al que queremos volver
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git log
+commit 14e7f121731f95dc640998e39b600ebaa6495694 (HEAD -&gt; configPre, origin/configPre)
+Author: luispzmarin &lt;luispzmarin@gmail.com&gt;
+Date:   Wed Nov 25 13:13:49 2020 +0000
+
+    Test commit
+
+commit d00e3b0c69eb3cc48e193d3ebd5e1f66b440ffac
+Author: luispzmarin &lt;luispzmarin@gmail.com&gt;
+Date:   Wed Nov 25 12:52:23 2020 +0000
+
+    Create Pre enviroment</pre>
+
+<p>
+Después copiamos el hash del commit al que queremos volver (con los 7 prímeros dígitos estaría bien) y ejecutamos la siguiente orden
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git reset --hard d00e3b0c69eb3cc48e193d3ebd5e1f66b440ffac
+HEAD está ahora en d00e3b0 Create Pre enviroment</pre>
+
+<p>
+Ahora tenemos los cambios en local, para corregir GitHub, deberemos hacer un push. Pero al tener GitHub un commit por delante nuestro no nos dejará. Por ello habra que “forzarlo”
+</p>
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git push --force
+Username for &#039;https://github.com&#039;: luispzmarin 
+Password for &#039;https://luispzmarin@github.com&#039;: 
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/pl4t4f0rm4bdk/f0nt_4ngubDk
+ + 14e7f12...d00e3b0 configPre -&gt; configPre (forced update)</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;ELIMINAR&quot;,&quot;hid&quot;:&quot;eliminar&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;44-1504&quot;} -->
+<h2 class="sectionedit3" id="recuperar">RECUPERAR</h2>
+<div class="level2">
+<pre class="code">usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git fsck --lost-found
+Revisando objetos directorios: 100% (256/256), listo.
+Revisando objetos: 100% (1573/1573), listo.
+dangling commit 14e7f121731f95dc640998e39b600ebaa6495694
+usuario@usuario-Lenovo-ideapad-330-15ICH:~/Git/front2511$ git show 14e7f121731f95dc640998e39b600ebaa6495694
+commit 14e7f121731f95dc640998e39b600ebaa6495694
+Author: luispzmarin &lt;luispzmarin@gmail.com&gt;
+Date:   Wed Nov 25 13:13:49 2020 +0000
+
+    Test commit
+
+ </pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;RECUPERAR&quot;,&quot;hid&quot;:&quot;recuperar&quot;,&quot;codeblockOffset&quot;:3,&quot;secid&quot;:3,&quot;range&quot;:&quot;1505-&quot;} -->

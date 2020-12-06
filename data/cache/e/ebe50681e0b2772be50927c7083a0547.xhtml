@@ -1,0 +1,105 @@
+
+<h1 class="sectionedit1" id="listado">Listado:</h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> git stash</div>
+</li>
+<li class="level1"><div class="li"> git pull</div>
+</li>
+<li class="level1"><div class="li"> git stash pop</div>
+</li>
+<li class="level1"><div class="li"> git stash list</div>
+</li>
+<li class="level1"><div class="li"> git branch mybranch</div>
+</li>
+<li class="level1"><div class="li"> git checkout mybranch</div>
+</li>
+<li class="level1"><div class="li"> git checkout -b mybranch</div>
+</li>
+<li class="level1"><div class="li"> git merge rama</div>
+</li>
+<li class="level1"><div class="li"> git checkout – &lt;file&gt; (Git revert changes)</div>
+</li>
+<li class="level1"><div class="li"> git reset</div>
+</li>
+<li class="level1"><div class="li"> git fetch –all</div>
+</li>
+<li class="level1"><div class="li"> git checkout mybranch</div>
+</li>
+<li class="level1"><div class="li"> git checkout -b rama –track origin/test</div>
+</li>
+<li class="level1"><div class="li"> git stash dió error (de unable to write index, poco espacio) , con un df -h (muestra el disco y uso), y du -h [ruta] | sort -rn (te ordena de mayor a menor uso de disco), la ruta /var/log/journal (creo que es de errores de sistema), era gigante, la borramos y pudimos seguir adelante con el git stash</div>
+</li>
+</ul>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Listado:&quot;,&quot;hid&quot;:&quot;listado&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:1,&quot;range&quot;:&quot;1-646&quot;} -->
+<h1 class="sectionedit2" id="seleccionando_commitscherry-pick">Seleccionando commits: Cherry-pick</h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> (master) $ git cherry-pick 13f03ab (Un solo commit)</div>
+</li>
+<li class="level1"><div class="li"> (master) $ git cherry-pick 13f03ab fe834e9  (Varios commits)</div>
+</li>
+<li class="level1"><div class="li"> (master) $ git cherry-pick -x 13f03ab (Modifica el mensaje para añadir una referencia al commit original)</div>
+</li>
+<li class="level1"><div class="li"> (master) $ git log –pretty=“%h %s %b” 8eac365 Add Facebook login (cherry picked from commit 13f03ab) </div>
+</li>
+<li class="level1"><div class="li"> git cherry-pick -n (No hace ommit)</div>
+</li>
+<li class="level1"><div class="li"> git cherry-pick -e (Edita el mensaje en lugar de usar el original)</div>
+</li>
+</ul>
+
+<p>
+Referencia: <a href="https://www.runroom.com/realworld/seleccionando-commits-cherry-pick" class="urlextern" title="https://www.runroom.com/realworld/seleccionando-commits-cherry-pick" rel="ugc nofollow">https://www.runroom.com/realworld/seleccionando-commits-cherry-pick</a>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Seleccionando commits: Cherry-pick&quot;,&quot;hid&quot;:&quot;seleccionando_commitscherry-pick&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:2,&quot;range&quot;:&quot;647-1226&quot;} -->
+<h1 class="sectionedit3" id="almacenar_el_usuario_y_la_contrasena">Almacenar el usuario y la contraseña</h1>
+<div class="level1">
+<ul>
+<li class="level1"><div class="li"> $ git config credential.helper store</div>
+</li>
+<li class="level1"><div class="li"> $ git push <a href="https://github.com/owner/repo.git" class="urlextern" title="https://github.com/owner/repo.git" rel="ugc nofollow">https://github.com/owner/repo.git</a></div>
+</li>
+</ul>
+<ul>
+<li class="level1"><div class="li"> Username for &#039;<a href="https://github.com" class="urlextern" title="https://github.com" rel="ugc nofollow">https://github.com</a>&#039;: &lt;USERNAME&gt;</div>
+</li>
+<li class="level1"><div class="li"> Password for &#039;<a href="https://USERNAME@github.com" class="urlextern" title="https://USERNAME@github.com" rel="ugc nofollow">https://USERNAME@github.com</a>&#039;: &lt;PASSWORD&gt;</div>
+</li>
+</ul>
+
+<p>
+Fuente: <a href="https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password" class="urlextern" title="https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password" rel="ugc nofollow">https://stackoverflow.com/questions/6565357/git-push-requires-username-and-password</a>
+</p>
+<hr />
+<ul>
+<li class="level1"><div class="li"> <pre class="code"> $ git config --global --unset credential.helper (Resetear) </pre>
+</div>
+</li>
+<li class="level1"><div class="li"> <pre class="code"> $ git config --unset credential.helper (Resetear) </pre>
+</div>
+</li>
+</ul>
+
+<p>
+Fuente: <a href="https://stackoverflow.com/questions/15381198/remove-credentials-from-git" class="urlextern" title="https://stackoverflow.com/questions/15381198/remove-credentials-from-git" rel="ugc nofollow">https://stackoverflow.com/questions/15381198/remove-credentials-from-git</a>
+</p>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Almacenar el usuario y la contrase\u00f1a&quot;,&quot;hid&quot;:&quot;almacenar_el_usuario_y_la_contrasena&quot;,&quot;codeblockOffset&quot;:0,&quot;secid&quot;:3,&quot;range&quot;:&quot;1227-1815&quot;} -->
+<h1 class="sectionedit4" id="obteniendo_la_url_de_nuestro_repositorio">OBTENIENDO LA URL DE NUESTRO REPOSITORIO</h1>
+<div class="level1">
+<pre class="code">git config --get remote.origin.url</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;OBTENIENDO LA URL DE NUESTRO REPOSITORIO&quot;,&quot;hid&quot;:&quot;obteniendo_la_url_de_nuestro_repositorio&quot;,&quot;codeblockOffset&quot;:2,&quot;secid&quot;:4,&quot;range&quot;:&quot;1816-1921&quot;} -->
+<h1 class="sectionedit5" id="clonar_un_repositorio_de_github">Clonar un repositorio de GitHub</h1>
+<div class="level1">
+<pre class="code">git clone https://github.com/usuario/nombre_repositorio</pre>
+
+</div>
+<!-- EDIT{&quot;target&quot;:&quot;section&quot;,&quot;name&quot;:&quot;Clonar un repositorio de GitHub&quot;,&quot;hid&quot;:&quot;clonar_un_repositorio_de_github&quot;,&quot;codeblockOffset&quot;:3,&quot;secid&quot;:5,&quot;range&quot;:&quot;1922-&quot;} -->
